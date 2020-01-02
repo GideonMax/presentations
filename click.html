@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("*").click(() => {//9
+                event.stopPropagation();
+                
+                $("*").css("background-color", "white");
+                $(event.target).css("background-color", "red");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        dddd
+        <div>
+            jk
+        </div>
+        <p>ggg</p>
+    </div>
+</body>
+
+</html>
