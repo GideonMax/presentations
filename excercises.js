@@ -5,6 +5,14 @@ const BodyParse=require ("body-parser");
 const modul= require("./module.js")
 console.log(modul.Twice(4));
 
+
+//0
+
+var func1 = (a)=>{
+    return a*2;
+}
+var func2 = a=>a*2;
+
 //3
 app.post("/post.test",(req,res)=>{
     if(req.body.isA=="true"){

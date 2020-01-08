@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const BodyParse = require("body-parser");
-//app.use(BodyParse.json());
 app.use(BodyParse.urlencoded({ extended: true }));
 app.get("/click", (req, res) => {//9
     res.sendFile(__dirname + "/click.html");
