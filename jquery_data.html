@@ -5,10 +5,10 @@
     <title>Document</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $.get("/example.dat",(data,status)=>{
+        $.get("/example.dat",(data,status)=>{//11
             console.log(data);
         })
-        $.post("/post",{data:"yes"})
+        $.post("/post",{data:"yes"})//12
         $(document).ready(()=>{//10
             $("#loading").load("/yes.load")
         })
