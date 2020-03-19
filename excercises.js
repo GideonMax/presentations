@@ -29,8 +29,8 @@ app.get("/example.js",(req,res)=>{
 })
 
 //4
-app.get("/:name.js",(req,res)=>{
-    res.sendFile(__dirname+"/js/"+req.params.name+".js")
+app.get("/:name.html",(req,res)=>{
+    res.sendFile(__dirname+"/html/"+req.params.name+".html")
 })
 
 //1

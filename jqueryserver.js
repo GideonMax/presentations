@@ -20,7 +20,6 @@ app.post("/post", (req, res) => { //12
 app.get("/example.dat", (req, res) => { //11
     res.send("data");
 })
-
 app.get("/yes", (req, res) => { //7,8
     res.sendFile(__dirname + "/jquery_toggle.html");
 })
